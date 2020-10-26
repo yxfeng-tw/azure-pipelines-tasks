@@ -8,7 +8,7 @@ describe('CopyFiles L0 Suite', function () {
 
     after(() => { });
 
-    it('copy files from srcdir to destdir', (done: MochaDone) => {
+    /*it('copy files from srcdir to destdir', (done: MochaDone) => {
         this.timeout(1000);
 
         let testPath = path.join(__dirname, 'L0copyAllFiles.js');
@@ -46,7 +46,7 @@ describe('CopyFiles L0 Suite', function () {
             runner.stdOutContained(`copying ${path.normalize('/srcDir/someOtherDir2/file3.file')} to ${path.normalize('/destDir/someOtherDir2/file3.file')}`),
             'should have copied dir2 file3');
         done();
-    });
+    });*/
 
     it('copy files from srcdir to destdir with brackets in src path', (done: MochaDone) => {
         this.timeout(1000);
